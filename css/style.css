@@ -6,13 +6,26 @@
 #topName {
     margin-left: 2.5vmin;
     font-size: 2.2rem;
+
 }
 
+#header {
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    float: top;
+    -webkit-animation: slide 2s forwards;
+    -moz-animation: slide 2s forwards;
+    animation: slide 2s forwards;
+}
 
 #topLogo {
     width: 1.8vmax;
     float: right;
     margin-right: 1.4vmin;
+    -webkit-animation: fadein 3s alternate-reverse; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 6s; /* Firefox < 16 */
+    animation: fadein 6s;
 }
 
 #navlogo {

@@ -1,0 +1,125 @@
+.headerOrTitle {
+    font-family: 'Montserrat', sans-serif;
+    color: #dd6b4d;
+}
+
+#topName {
+    margin-top: 1vmin;
+}
+
+#topLogo {
+    width: 3vmin;
+}
+
+#navLogo {
+    width: 1vw;
+    margin-left: 0.5vw;
+}
+
+nav {
+    border-radius: 10px 30px;
+    background-color: #1c4b82;
+    margin: 1vmin;
+    box-shadow: 0 0 0 1px #1c4b82fc;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    color: #dae1e7;
+}
+
+body {
+    background-color: #dae1e7;
+    font-family: 'Mukta', sans-serif;
+    color: #183661;
+}
+
+#shake1 {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    -webkit-animation: slide 2s forwards;
+    -moz-animation: slide 2s forwards;
+    animation: slide 2s forwards;
+}
+#shake1 img {
+    border-radius: 50px;
+    margin: 1vmin;
+    width: 50vw;
+    z-index: 1;
+}
+
+#description {
+    z-index: 2;
+    margin: 1vmin;
+    width: 46vw;
+    position: fixed;
+    top: 20vh;
+    right: 0;
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 4s; /* Firefox < 16 */
+    animation: fadein 4s;
+}
+
+@keyframes slide {
+    from {
+        left: -100vw;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@-moz-keyframes slide {
+    from {
+        left: -100vw;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@-webkit-keyframes slide {
+    from {
+        left: -100vw;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

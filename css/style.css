@@ -4,43 +4,78 @@
 }
 
 #topName {
-    margin-top: 1vmin;
+    margin-left: 2.5vmin;
+    font-size: 2.2rem;
 }
+
 
 #topLogo {
-    width: 3vmin;
+    width: 1.8vmax;
+    float: right;
+    margin-right: 1.4vmin;
 }
 
-#navLogo {
-    width: 1vw;
-    margin-left: 0.5vw;
+#navlogo {
+    display: block;
+    margin-left: 0.8vw;
+    margin-top: 0.5vh;
+    width: 1.2vw;
+    -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 6s; /* Firefox < 16 */
+    animation: fadein 6s;
+
 }
 
-nav {
+#navbartop {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 0.5vmin;
+
+}
+
+#navbartop ul {
     border-radius: 10px 30px;
-    background-color: #1c4b82;
-    margin: 1vmin;
-    box-shadow: 0 0 0 1px #1c4b82fc;
-}
-
-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: #1c4b82cc;
 }
 
-nav li {
+#navbartop li {
     float: left;
+
 }
 
-nav li a {
+#navbartop li a {
+    display: block;
+    text-align: center;
+    padding: 0.7em;
+    margin: 0.3em;
+    text-decoration: none;
     color: #dae1e7;
+}
+
+#navtopstart {
+    margin-left: 1vmin;
+}
+
+#navbartop li a:hover {
+    background-color: #183661;
+    border-radius: 10px 30px;
+}
+
+#navbartop .active {
+    background-color: #dd6b4d;
+    border-radius: 10px 30px;
 }
 
 body {
     background-color: #dae1e7;
-    font-family: 'Mukta', sans-serif;
-    color: #183661;
 }
 
 #shake1 {
@@ -51,20 +86,24 @@ body {
     -moz-animation: slide 2s forwards;
     animation: slide 2s forwards;
 }
+
 #shake1 img {
-    border-radius: 50px;
-    margin: 1vmin;
-    width: 50vw;
+    border-radius: 30px;
+    margin: 2.5vmin;
+    width: 40vw;
     z-index: 1;
 }
 
 #description {
+    font-family: 'Mukta', sans-serif;
+    color: #183661;
     z-index: 2;
     margin: 1vmin;
-    width: 46vw;
-    position: fixed;
+    width: 55vw;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    float: right;
     top: 20vh;
-    right: 0;
     -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 4s; /* Firefox < 16 */
     animation: fadein 4s;

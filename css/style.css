@@ -3,29 +3,28 @@
     color: #dd6b4d;
 }
 
+header {
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row: 1; /*! position: sticky; */
+    height: 100%; /*! top: 0; *//*! z-index: 3; */
+    max-height: 100%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
 #topName {
-    margin-left: 2.5vmin;
-    font-size: 2.2rem;
-
-}
-
-#header {
-    overflow: hidden;
+    font-size: 36px;
+    height: 100%;
     position: relative;
-    top: 0;
-    float: top;
-    -webkit-animation: slide 2s forwards;
-    -moz-animation: slide 2s forwards;
-    animation: slide 2s forwards;
+    margin: 0 0 0 2.5vmin;
 }
+
 
 #topLogo {
     width: 1.8vmax;
     float: right;
     margin-right: 1.4vmin;
-    -webkit-animation: fadein 3s alternate-reverse; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 6s; /* Firefox < 16 */
-    animation: fadein 6s;
 }
 
 #navlogo {
@@ -36,18 +35,26 @@
     -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 6s; /* Firefox < 16 */
     animation: fadein 6s;
-
 }
 
-#navbartop {
-    position: -webkit-sticky; /* Safari */
+nav {
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 2;
     position: sticky;
     top: 0;
     z-index: 3;
+}
+
+#navbartop {
+    /*! position: -webkit-sticky; */ /* Safari */
+    /*! position: sticky; */
+    /*! top: 0; */
+    /*! z-index: 3; */
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     margin-left: 0.5vmin;
-
+    /*! height: 100%; */
 }
 
 #navbartop ul {
@@ -61,7 +68,6 @@
 
 #navbartop li {
     float: left;
-
 }
 
 #navbartop li a {
@@ -87,8 +93,21 @@
     border-radius: 10px 30px;
 }
 
+main {
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row: 3;
+}
+
 body {
     background-color: #dae1e7;
+    margin-bottom: 8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 10%);
+    grid-template-rows: minmax(3rem, 5%) minmax(3rem, 5%) 90%;
+    height: 100%;
+
 }
 
 #shake1 {
@@ -175,3 +194,4 @@ body {
         opacity: 1;
     }
 }
+
